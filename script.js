@@ -96,6 +96,13 @@ copyPixButton.addEventListener("click", async () => {
   }
 });
 
+const dados = {
+  nome: formData.get("nome"),
+  whatsapp: formData.get("whatsapp"),
+  presenca: formData.get("presenca"),
+  observacao: formData.get("observacao")
+};
+
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", (event) => {
     const targetId = anchor.getAttribute("href");
