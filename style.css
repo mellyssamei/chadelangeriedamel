@@ -150,6 +150,162 @@ img {
   background: currentColor;
 }
 
+.dress-code-card {
+  text-align: center;
+}
+
+.dress-code-card .lead {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dress-code-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 32px auto 24px;
+  flex-wrap: wrap;
+}
+
+.dress-color {
+  min-width: 230px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 22px;
+  text-align: left;
+}
+
+.dress-circle {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dress-color--red .dress-circle {
+  background: #9b1028;
+}
+
+.dress-color--pink .dress-circle {
+  background: #ef9fb5;
+}
+
+.dress-color small {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--text-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.dress-color strong {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  color: var(--wine-900);
+}
+
+.dress-or {
+  font-family: "Great Vibes", cursive;
+  font-size: 38px;
+  color: var(--wine-700);
+}
+
+.dress-note {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--text-soft);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.confirmacao-card form {
+  margin-top: 32px;
+  max-width: 720px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.confirmacao-card input,
+.confirmacao-card select,
+.confirmacao-card textarea {
+  width: 100%;
+  border: 1px solid rgba(139, 12, 35, 0.14);
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--wine-900);
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  padding: 16px 18px;
+  border-radius: 16px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.confirmacao-card input {
+  min-height: 56px;
+}
+
+.confirmacao-card select {
+  min-height: 56px;
+  cursor: pointer;
+}
+
+.confirmacao-card textarea {
+  grid-column: 1 / -1;
+  min-height: 110px;
+  resize: vertical;
+}
+
+.confirmacao-card input::placeholder,
+.confirmacao-card textarea::placeholder {
+  color: #a77c85;
+}
+
+.confirmacao-card input:focus,
+.confirmacao-card select:focus,
+.confirmacao-card textarea:focus {
+  border-color: var(--wine-700);
+  box-shadow: 0 0 0 4px rgba(163, 19, 47, 0.08);
+  background: #fff;
+}
+
+.confirmacao-card button[type="submit"] {
+  grid-column: 1 / -1;
+  justify-self: start;
+  min-width: 220px;
+  margin-top: 4px;
+}
+
+#mensagemConfirmacao {
+  margin-top: 18px;
+  font-weight: 700;
+  color: var(--wine-700);
+}
+
+/* Celular */
+@media (max-width: 640px) {
+  .confirmacao-card form {
+    grid-template-columns: 1fr;
+  }
+
+  .confirmacao-card textarea,
+  .confirmacao-card button[type="submit"] {
+    grid-column: 1;
+  }
+
+  .confirmacao-card button[type="submit"] {
+    width: 100%;
+  }
+}
+
+
+
 .hero h1 {
   margin: 18px 0 30px;
   line-height: 0.84;
@@ -247,80 +403,6 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 28px;
-}
-
-.dress-code-card {
-  text-align: center;
-}
-
-.dress-code-card .lead {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.dress-code-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-  margin: 32px auto 24px;
-  flex-wrap: wrap;
-}
-
-.dress-color {
-  min-width: 230px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 18px 22px;
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: 22px;
-  text-align: left;
-}
-
-.dress-circle {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.dress-color--red .dress-circle {
-  background: #9b1028;
-}
-
-.dress-color--pink .dress-circle {
-  background: #ef9fb5;
-}
-
-.dress-color small {
-  display: block;
-  margin-bottom: 3px;
-  color: var(--text-soft);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 11px;
-  font-weight: 700;
-}
-
-.dress-color strong {
-  font-family: "Playfair Display", serif;
-  font-size: 26px;
-  color: var(--wine-900);
-}
-
-.dress-or {
-  font-family: "Great Vibes", cursive;
-  font-size: 38px;
-  color: var(--wine-700);
-}
-
-.dress-note {
-  max-width: 650px;
-  margin: 0 auto;
-  color: var(--text-soft);
-  line-height: 1.7;
-  font-size: 16px;
 }
 
 .button {
