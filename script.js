@@ -1,5 +1,5 @@
 const CONFIG = {
-  sellerWhatsApp: "",
+  sellerWhatsApp: "5531994362097",
   pixKey: "31971755128",
   mapsUrl: "https://maps.app.goo.gl/9GBucQrGywLigAdQ9",
   helpWhatsApp: "5531994362097",
